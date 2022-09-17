@@ -1,0 +1,23 @@
+.iphoe13 {
+  margin: auto auto;
+}
+.price,
+.memory {
+  width: 100px;
+  height: 60px;
+}
+
+.colorCircle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.status,
+.colorValue {
+  font-size: 10px;
+}
+.count button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}

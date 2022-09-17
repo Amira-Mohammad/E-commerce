@@ -1,0 +1,23 @@
+.sliderItems {
+  .carousel-indicators [data-bs-target] {
+    width: 5px !important;
+    height: 5px !important;
+    border-radius: 50%;
+    background-color: grey !important;
+  }
+  .carousel-indicators {
+    background-color: white !important;
+    width: 50px !important;
+    border-radius: 10px;
+    margin: 10px auto !important;
+  }
+
+  .navbar-toggler {
+    right: 0 !important;
+    position: absolute !important;
+    top: 10px !important;
+  }
+  img {
+    width: 100% !important;
+  }
+}

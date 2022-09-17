@@ -1,0 +1,24 @@
+.homeWrapper {
+  .navbar {
+    padding: 0 !important;
+  }
+  h1 {
+    color: red;
+  }
+  .subscription {
+    height: 150px;
+    background: #f0f0f0 0% 0% no-repeat padding-box;
+
+    input {
+      background-color: transparent;
+    }
+    button {
+      height: 35px;
+      margin-bottom: 7px;
+    }
+  }
+  footer {
+    bottom: 0;
+    height: 100px;
+  }
+}
