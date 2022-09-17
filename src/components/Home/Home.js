@@ -7,6 +7,9 @@ import Footer from "../Footer/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProductDetails from "../ProductDetails/ProductDetails";
 import NavBar from "../NavBar/NavBar";
+// import ExploreProducts from "../ExploreProducts/ExploreProducts1";
+import ProductsSlider from "../ExploreProducts/ProductsSlider";
+
 function Home() {
   return (
     <BrowserRouter>
@@ -105,10 +108,10 @@ function Home() {
           <Route path="/" element={<Slider />} />
           <Route path="/details" element={<ProductDetails />} />
         </Routes>
+        {/* <ExploreProducts /> */}
 
-        <div className="exploreProducts">
-          <h5>Explore Products</h5>
-        </div>
+        <ProductsSlider />
+
         <div className="subscription d-flex align-items-center justify-content-center">
           <div>
             <div>

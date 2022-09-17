@@ -64,8 +64,12 @@ function ProductDetails() {
             <button className="btn border border-dark mx-2">-</button>
           </div>
           <div className="d-flex my-2 ">
-            <div className="border rounded mx-2 memory p-1">Full Price</div>
-            <div className="border rounded mx-2 memory p-1">Installments</div>
+            <div className="border rounded mx-2 memory p-1 d-flex justify-content-center align-items-center">
+              Full Price
+            </div>
+            <div className="border rounded mx-2 memory p-1 d-flex justify-content-center align-items-center">
+              Installments
+            </div>
           </div>
 
           <div className="d-flex">
@@ -142,7 +146,6 @@ function ProductDetails() {
             </div>
           </div>
         </div>
-        <h1>ProductDetails</h1>
       </div>
     </div>
   );

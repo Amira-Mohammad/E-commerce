@@ -5,9 +5,9 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption,
 } from "reactstrap";
 import Axios from "axios";
+import { Link } from "react-router-dom";
 const items = [
   {
     img: "http://preview.bit68.com/bit68Task/slider.png",
@@ -66,30 +66,32 @@ function Slider(args) {
     );
   }, []);
   return (
-    <Carousel
-      className="sliderItems"
-      activeIndex={activeIndex}
-      next={next}
-      previous={previous}
-      {...args}
-    >
-      <CarouselIndicators
-        items={sliderItems}
+    <Link to="/details">
+      <Carousel
+        className="sliderItems"
         activeIndex={activeIndex}
-        onClickHandler={goToIndex}
-      />
-      {slides}
-      <CarouselControl
-        direction="prev"
-        directionText="Previous"
-        onClickHandler={previous}
-      />
-      <CarouselControl
-        direction="next"
-        directionText="Next"
-        onClickHandler={next}
-      />
-    </Carousel>
+        next={next}
+        previous={previous}
+        {...args}
+      >
+        <CarouselIndicators
+          items={sliderItems}
+          activeIndex={activeIndex}
+          onClickHandler={goToIndex}
+        />
+        {slides}
+        <CarouselControl
+          direction="prev"
+          directionText="Previous"
+          onClickHandler={previous}
+        />
+        <CarouselControl
+          direction="next"
+          directionText="Next"
+          onClickHandler={next}
+        />
+      </Carousel>
+    </Link>
   );
 }
 

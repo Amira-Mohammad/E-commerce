@@ -21,4 +21,10 @@
     bottom: 0;
     height: 100px;
   }
+
+  .navbar-toggler {
+    right: 0 !important;
+    position: absolute !important;
+    top: 10px !important;
+  }
 }
